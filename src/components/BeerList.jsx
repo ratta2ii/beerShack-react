@@ -3,46 +3,51 @@ import Beer from './Beer';
 
 var masterBeerList = [
   {
-    name: 'Blue Moon',
-    brands: 'Molson Coors',
+    names: 'Blue Moon',
+    brand: 'Molson Coors',
     alcoholContent: '3.2%',
     pintsRemaining: 124,
-    price: '$7.00'
+    price: '$7.00',
+    imageUrl: '"https://source.unsplash.com/random/200×200/?beer"'
   },
   {
-    name: 'Beer 2',
+    names: 'Beer 2',
     brand: 'Molson Coors',
     alcoholContent: '3.2%',
     pintsRemaining: 124,
     price: '$7.00'
   },
   {
-    name: 'Beer 3',
+    names: 'Beer 3',
     brand: 'Molson Coors',
     alcoholContent: '3.2%',
     pintsRemaining: 124,
-    price: '$7.00'
+    price: '$7.00',
+    imageUrl: '"https://source.unsplash.com/random/300×300/?beer"'
   },
   {
-    name: 'Beer 4',
+    names: 'Beer 4',
     brand: 'Molson Coors',
     alcoholContent: '3.2%',
     pintsRemaining: 124,
-    price: '$7.00'
+    price: '$7.00',
+    imageUrl: '"https://source.unsplash.com/random/400×400/?beer"'
   },
   {
-    name: 'Beer 5',
+    names: 'Beer 5',
     brand: 'Molson Coors',
     alcoholContent: '3.2%',
     pintsRemaining: 124,
-    price: '$7.00'
+    price: '$7.00',
+    imageUrl: '"https://source.unsplash.com/random/100×100/?beer"'
   },
   {
-    name: 'Beer 6',
+    names: 'Beer 6',
     brand: 'Molson Coors',
     alcoholContent: '3.2%',
     pintsRemaining: 124,
-    price: '$7.00'
+    price: '$7.00',
+    imageUrl: '"https://source.unsplash.com/random/350×350/?beer"'
   }
 ];
 
@@ -51,8 +56,8 @@ function BeerList() {
     <div>
       {masterBeerList.map((beer, index) =>
         <Beer
-          names={beer.name}
-          location={beer.brand}
+          names={beer.names}
+          brand={beer.brand}
           alcoholContent={beer.alcoholContent}
           pintsRemaining={beer.pintsRemaining}
           price={beer.price} 
