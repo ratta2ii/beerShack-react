@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function Beer(props) {
 
   let productsContainer = {
-    width: '30%',
+    width: '40%',
     margin: '10px auto',
     backgroundColor: 'wheat',
     display: 'grid',
