@@ -5,12 +5,11 @@ import PropTypes from 'prop-types';
 function Beer(props) {
 
   let productsContainer = {
-    width: '40%',
+    width: '80%',
     margin: '10px auto',
     backgroundColor: 'wheat',
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
-    // gridTemplateColumns: '40% 70%',
     gridColumnGap: '0px',
     gridRowGap: '0px'
   };
@@ -58,7 +57,7 @@ function Beer(props) {
     <div>
       <div style={productsContainer}>
         <div style={leftColumn}>
-          <img style={beerImage} src={"https://source.unsplash.com/random/150×150/?beer"} />
+          <img style={beerImage} src={'https://source.unsplash.com/random/150×150/?beer'} />
         </div>
         <div style={rightColumn}>
           <h3 style={beerName}>{props.names}</h3>
