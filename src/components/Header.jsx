@@ -1,4 +1,4 @@
-  
+
 import React from 'react';
 
 
@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <div>
-      <h1 style={headerStyles} >Beer Shack</h1>
+      <h1 style={headerStyles}>Beer Shack</h1>
     </div>
   );
 }
