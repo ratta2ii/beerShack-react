@@ -1,22 +1,31 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Navbar from './Navbar';
 //import Header from './Header';
-import Menu from './Menu';
-// import NewTicketForm from './NewBeerForm';
+import Products from './Products';
+import NewBeerForm from './NewBeerForm';
 import Error404 from './Error404';
+import Navbar from './Navbar';
+
 
 
 function App() {
+
+  let background = {
+    backgroundColor: 'black'
+  };
+
+
   return (
-    <div>
+    <div style={background}>
+      {/* <Navbar /> */}
       <Switch>
-        <Route exact path='/' component={Menu} />
-        {/* <Route path='/newbeer' component={NewBeerForm} />  */}
+        <Route exact path='/products' component={Products} />
+        <Route path='/newbeer' component={NewBeerForm} /> 
         <Route component={Error404} />
-      </Switch> 
+      </Switch>
     </div>
   );
+
 }
 
 export default App;

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="utf-8">
   <title><%= htmlWebpackPlugin.options.title %></title>
@@ -9,9 +10,11 @@
     }
   </style>
 </head>
-  <body>
-    <% if (htmlWebpackPlugin.options.appMountId) { %>
-      <div id="<%= htmlWebpackPlugin.options.appMountId%>"></div>
-    <% } %>
-  </body>
+
+<body>
+  <% if (htmlWebpackPlugin.options.appMountId) { %>
+  <div id="<%= htmlWebpackPlugin.options.appMountId%>"></div>
+  <% } %>
+</body>
+
 </html>

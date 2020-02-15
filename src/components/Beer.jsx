@@ -5,18 +5,20 @@ import PropTypes from 'prop-types';
 function Beer(props) {
 
   let productsContainer = {
-    width: '80%',
-    margin: '10px auto',
-    backgroundColor: '#ffDE00',
+    width: '100%',
+    margin: '2px auto',
+    boderBottom: '5px solid gray',
+    backgroundColor: 'rgb(197, 228, 247)',
+    // backgroundColor: '#ffDE00',
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: '1fr 2fr',
     gridColumnGap: '0px',
     gridRowGap: '0px'
   };
 
   let leftColumn = {
     gridArea: '1 / 1 / 2 / 2',
-    padding: '68px'
+    padding: '35px 0 20px 60px'
   };
 
   let rightColumn = {
@@ -31,7 +33,7 @@ function Beer(props) {
   let beerName = {
     fontSize: '70px',
     padding: '0',
-    margin: '68px 0 15px 0',
+    margin: '50px 0 15px',
   };
 
   let beerBrand = {
@@ -66,7 +68,6 @@ function Beer(props) {
           <h4 style={content}>Remaining Pints: <span style={contentNumber}>{props.pintsRemaining}</span></h4>
           <h4 style={content}>Price: <span style={beerPrice}>{props.price}</span></h4>
         </div>
-        <hr />
       </div>
     </div>
   );

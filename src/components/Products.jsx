@@ -1,19 +1,15 @@
 import React from 'react';
 import BeerList from './BeerList';
-import panther from '../assets/images/panther.jpg';
+//import panther from '../assets/images/panther.jpg';
+import colors from '../assets/images/colors.jpg';
 import Navbar from './Navbar';
 
-export default function Menu() {
+export default function Products() {
 
   var background = {
-    backgroundImage: `url(${panther})`,
+    backgroundImage: `url(${colors})`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 100%',
-    position: 'absolute',
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%'
+    backgroundSize: '100% 100%'
   };
 
   var parent = {
@@ -25,12 +21,12 @@ export default function Menu() {
   };
 
   var navDiv = {
-    backgroundColor: 'black',
+    // backgroundColor: 'black',
     gridArea: '1 / 1 / 2 / 13'
   };
 
   var leftColumn = {
-    backgroundColor: '#121430',
+    // backgroundColor: 'black',
     gridArea: '2 / 1 / 8 / 4'
   };
 
@@ -40,11 +36,12 @@ export default function Menu() {
     textAlign: 'center',
     padding: '40px',
     color: 'white',
-    fontSize: '40px'
+    fontSize: '30px',
+    opacity: '0.8',
   };
 
   var main = {
-    backgroundColor: 'black',
+    // backgroundColor: 'black',
     gridArea: '3 / 4 / 8 / 10'
   };
 
@@ -58,9 +55,10 @@ export default function Menu() {
         <div style={navDiv}>
           <Navbar />
         </div>
-        <div style={leftColumn}> </div>
+        <div style={leftColumn}>
+        </div>
         <div style={title}>
-          <h1>Check out Our Products</h1>
+          <h1>Specialty Beers</h1>
         </div>
         <div style={main}>
           <BeerList />
