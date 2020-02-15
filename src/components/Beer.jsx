@@ -7,7 +7,7 @@ function Beer(props) {
   let productsContainer = {
     width: '80%',
     margin: '10px auto',
-    backgroundColor: 'wheat',
+    backgroundColor: '#ffDE00',
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     gridColumnGap: '0px',
