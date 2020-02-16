@@ -4,7 +4,7 @@ import React from 'react';
 
 function Header() {
 
-  var headerStyles = {
+  let headerStyles = {
     backgroundColor: 'cornflowerblue',
     marginTop: '50px'
   };

@@ -5,9 +5,9 @@ import Navbar from './Navbar';
 
 
 function Home() {
-  
-  var background = {
-    backgroundImage: `url(${blueTheme})`,
+
+  let background = {
+    backgroundImage: `(${blueTheme})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100% 100%',
     position: 'absolute',
@@ -15,7 +15,7 @@ function Home() {
     left: '0',
     width: '100%',
     height: '100%'
-  };
+  };x
 
   let headerStyles = {
     fontSize: '150px',
