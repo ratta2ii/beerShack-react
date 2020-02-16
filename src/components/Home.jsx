@@ -1,13 +1,13 @@
 
 import React from 'react';
-import blueTheme from '../assets/images/blue.jpg';
+import redTheme from '../assets/images/red.jpg';
 import Navbar from './Navbar';
 
 
 function Home() {
   
   var background = {
-    backgroundImage: `url(${blueTheme})`,
+    backgroundImage: `url(${redTheme})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100% 100%',
     position: 'absolute',

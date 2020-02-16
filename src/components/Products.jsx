@@ -1,12 +1,12 @@
 import React from 'react';
 import BeerList from './BeerList';
-import blueTheme from '../assets/images/blue.jpg';
+import redTheme from '../assets/images/red.jpg';
 import Navbar from './Navbar';
 
 function Products() {
 
   var background = {
-    backgroundImage: `url(${blueTheme})`,
+    backgroundImage: `url(${redTheme})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100% 100%'
   };
