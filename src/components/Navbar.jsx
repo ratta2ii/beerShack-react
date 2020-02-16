@@ -12,7 +12,7 @@ function Navbar() {
   var listElements = {
     float: 'left',
     fontSize: '35px',
-    border: '4px solid lightgray',
+    border: '4px solid #ffc150',
     color: 'lightgray',
     padding: '10px',
     listStyleType: 'none',
@@ -22,7 +22,7 @@ function Navbar() {
   var homeLink = {
     float: 'left',
     fontSize: '35px',
-    border: '4px solid lightgray',
+    border: '4px solid #ffc150',
     color: 'lightgray',
     padding: '10px',
     listStyleType: 'none',

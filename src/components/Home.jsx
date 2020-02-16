@@ -1,7 +1,8 @@
 
 import React from 'react';
 import redTheme from '../assets/images/red.jpg';
-import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
+
 
 
 function Home() {
@@ -18,16 +19,38 @@ function Home() {
   };
 
   let headerStyles = {
-    fontSize: '150px',
+    fontSize: '160px',
     fontWeight: 'bold',
-    color: 'white'      
+    textAlign: 'center',
+    color: '#ffda6a',
+    margin: '300px 0 10px 0'      
+  };
+
+  let entryLink = {
+    textAlign: 'center',
+    fontSize: '35px',
+    textDecoration: 'none',
+    listStyleType: 'none',
+    color: '#ffda6a'
+  };
+
+  let firstLetterB = {
+    fontSize: '300px',
+    color: '#8d0a00'
+  };
+
+  let firstLetterS = {
+    fontSize: '200px',
+    color: '#8d0a00'
   };
 
   return (
     <div style={background}>
-      <Navbar />
+
       <div>
-        <h1 style={headerStyles}>Beer Shack</h1>
+        <h1 style={headerStyles}><span style={firstLetterB}>B</span>eer<span style={firstLetterS}>S</span>hack</h1>
+        <p><Link to="/products"><li style={entryLink} >Enter Here</li></Link></p>
+
       </div> 
     </div>
   );
