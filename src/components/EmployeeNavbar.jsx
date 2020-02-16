@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-function Navbar() {
+function EmployeeNavbar() {
 
   var navContainer = {
     padding: '40px 15px',
@@ -37,9 +37,8 @@ function Navbar() {
       <ul>
         <Link to="/"><li style={homeLink} >Home</li></Link>
         <Link to="/products"><li style={listElements} >Products</li></Link>
-        <Link to="/newbeer"><li style={listElements} >Add Beer</li></Link>
-        <Link to="/test"><li style={listElements} >FAQ</li></Link>
-        <Link to="/test"><li style={listElements} >Sign In</li></Link>
+        <Link to="/newbeer"><li style={listElements} >Add Beer</li></Link> 
+        <Link to="/sign-out"><li style={listElements} >Sign Out</li></Link>
       </ul>
 
     </div>
@@ -48,4 +47,4 @@ function Navbar() {
 }
 
 
-export default Navbar;
+export default EmployeeNavbar;

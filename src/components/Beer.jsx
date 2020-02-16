@@ -8,13 +8,11 @@ function Beer(props) {
     width: '90%',
     margin: '25px auto',
     backgroundColor: 'white',
-    // backgroundColor: '#ffDE00',
     display: 'grid',
     gridTemplateColumns: '1fr 2fr',
     border: '40px solid rgb(255, 193, 80)',
-    webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)', 
+    webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
     boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
-    
     // webkitBoxShadow: '8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 15px 20px 7px -7px rgba(5,23,56,0)',
     // boxShadow: '8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 15px 20px 7px -7px rgba(5,23,56,0)'
   };
@@ -86,7 +84,7 @@ Beer.propTypes = {
   price: PropTypes.string.isRequired
 };
 
-export default Beer;
 
+export default Beer;
 
 

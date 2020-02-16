@@ -64,7 +64,9 @@ function BeerList() {
           key={index} />
       )}
     </div>
+
   );
 }
+
 
 export default BeerList;

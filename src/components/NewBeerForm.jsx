@@ -1,12 +1,12 @@
 import React from 'react';
-import redTheme from '../assets/images/dual.jpg';
+import blueTheme from '../assets/images/blue.jpg';
 import Navbar from './Navbar';
 import FormBox from './FormBox';
 
-export default function NewBeerForm() {
+function NewBeerForm() {
 
   var background = {
-    backgroundImage: `url(${redTheme})`,
+    backgroundImage: `url(${blueTheme})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100% 100%',
     position: 'absolute',
@@ -23,4 +23,7 @@ export default function NewBeerForm() {
     </div>
   );
 }
+
+
+export default NewBeerForm;
 

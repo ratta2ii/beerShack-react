@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function FormBox() {
+function FormBox() {
 
   let formContainer = {
     backgroundColor: 'white',
@@ -81,3 +81,6 @@ export default function FormBox() {
     </div>
   );
 }
+
+
+export default FormBox;
