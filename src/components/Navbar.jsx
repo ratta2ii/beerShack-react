@@ -6,11 +6,11 @@ export default function Navbar() {
 
   var navContainer = {
     padding: '40px 15px',
-    marginBottom: '150px'
+    marginBottom: '200px'
   };
 
   var unorderedList = {
-    marginLeft: '90%'
+    // marginLeft: '90%'
   };
 
   var listElements = {
@@ -31,7 +31,7 @@ export default function Navbar() {
     padding: '10px',
     listStyleType: 'none',
     marginRight: '-2px',
-    marginLeft: '70%'
+    marginLeft: '3%'
   };
 
 

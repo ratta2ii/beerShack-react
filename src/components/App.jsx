@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Products from './Products';
 import NewBeerForm from './NewBeerForm';
 import Error404 from './Error404';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 
 
 

@@ -5,24 +5,29 @@ import PropTypes from 'prop-types';
 function Beer(props) {
 
   let productsContainer = {
-    width: '100%',
-    margin: '2px auto',
-    boderBottom: '5px solid gray',
-    backgroundColor: 'rgb(197, 228, 247)',
+    width: '90%',
+    margin: '25px auto',
+    backgroundColor: 'white',
     // backgroundColor: '#ffDE00',
     display: 'grid',
     gridTemplateColumns: '1fr 2fr',
-    gridColumnGap: '0px',
-    gridRowGap: '0px'
+    border: '40px solid rgb(255, 193, 80)',
+    webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)', 
+    boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
+    
+    // webkitBoxShadow: '8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 15px 20px 7px -7px rgba(5,23,56,0)',
+    // boxShadow: '8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 15px 20px 7px -7px rgba(5,23,56,0)'
   };
 
   let leftColumn = {
     gridArea: '1 / 1 / 2 / 2',
-    padding: '35px 0 20px 60px'
+    padding: '35px 0 20px 60px',
+    zIndex: '1'
   };
 
   let rightColumn = {
-    gridArea: '1 / 2 / 2 / 3'
+    gridArea: '1 / 2 / 2 / 3',
+    marginLeft: '50px'
   };
 
   let beerImage = {

@@ -2,43 +2,44 @@ import React from 'react';
 
 export default function FormBox() {
 
-  var formContainer = {
+  let formContainer = {
     backgroundColor: 'white',
-    width: '400px',
-    margin: '100px auto',
-    height: '500px',
-    borderRadius: '3px'
+    width: '500px',
+    margin: '0 auto',
+    height: '650px',
+    borderRadius: '3px',
+    padding: '40px',
+    border: '60px solid #ffc150',
+    webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)', 
+    boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
   };
 
-  var pairNames = {
-    border: '2px solid gray',
-    width: '350px',
-    height: '30px',
-    margin: '20px',
-    borderRadius: '3px'
+
+   
+
+  let inputField = {
+    border: '4px solid #dda832',
+    width: '94%',
+    height: '60px',
+    margin: '0 0 35px 0',
+    borderRadius: '8px',
+    fontSize: '20px',
+    padding: '0 10px'
   };
 
-  var locationInput = {
-    border: '2px solid gray',
-    width: '350px',
-    height: '30px',
-    margin: '20px',
-    borderRadius: '3px'
-  };
-
-  var issueInput = {
-    border: '2px solid gray',
-    width: '350px',
-    height: '200px',
-    margin: '20px'
-  };
-
-  var submitButton = {
-    margin: '30px 0 50px 40%',
-    fontSize: '25px',
-    backgroundColor: 'lightgray',
+  let submitButton = {
+    margin: '30px 0 50px 35%',
+    fontSize: '30px',
+    backgroundColor: 'rgb(203, 213, 217)',
     borderRadius: '5px',
-    padding: '2px 10px'
+    padding: '6px 17px',
+    border: '2px solid gray'
+  };
+
+
+  let formLabel = {
+    fontSize: '25px',
+    margin: '0 0 7px 0'
   };
 
 
@@ -46,23 +47,30 @@ export default function FormBox() {
     <div style={formContainer}>
       <form>
 
-
-        <input style={pairNames}
+        <p style={formLabel}>Beer Name</p>
+        <input style={inputField}
           type='text'
           id='names'
-          placeholder='Pair Names' />
+          placeholder='Enter Beer Name' />
 
-
-        <input style={locationInput}
+        <p style={formLabel}>Beer Brand</p>
+        <input style={inputField}
           type='text'
           id='location'
-          placeholder='Location' />
+          placeholder='Enter Brand of Beer' />
 
 
+        <p style={formLabel}>Alcohol Content</p>
+        <input style={inputField}
+          type='text'
+          id='names'
+          placeholder='Enter Alcohol Content' />
 
-        <textarea style={issueInput}
-          id='issue'
-          placeholder='Describe your issue.' />
+        <p style={formLabel}>Beer Price</p>
+        <input style={inputField}
+          type='text'
+          id='location'
+          placeholder='Enter Price' />
 
 
         <div  >

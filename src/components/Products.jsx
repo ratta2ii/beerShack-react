@@ -1,13 +1,14 @@
 import React from 'react';
 import BeerList from './BeerList';
-//import panther from '../assets/images/panther.jpg';
-import colors from '../assets/images/colors.jpg';
+//import panther from '../assets/images/palms.png';
+//import tree from '../assets/images/beer.png';
+import redTheme from '../assets/images/dual.jpg';
 import Navbar from './Navbar';
 
 export default function Products() {
 
   var background = {
-    backgroundImage: `url(${colors})`,
+    backgroundImage: `url(${redTheme})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100% 100%'
   };
@@ -34,10 +35,12 @@ export default function Products() {
     backgroundColor: 'black',
     gridArea: '2 / 4 / 3 / 10',
     textAlign: 'center',
-    padding: '40px',
+    border: '39px solid #141819',
     color: 'white',
     fontSize: '30px',
-    opacity: '0.8',
+    opacity: '0.7',
+    borderRadius: '10px',
+    marginBottom: '40px'
   };
 
   var main = {
@@ -49,6 +52,15 @@ export default function Products() {
     gridArea: '2 / 10 / 8 / 13'
   };
 
+  // let treeImage = {
+  //   width: '20%',
+  //   position: 'fixed',
+  //   top: '50px',
+  //   left: '50px',
+  //   height: '1500px',
+  //   background: 'transparent'
+  // };
+
   return (
     <div style={background}>
       <div style={parent}>
@@ -56,6 +68,7 @@ export default function Products() {
           <Navbar />
         </div>
         <div style={leftColumn}>
+          {/* <img src={tree} style={treeImage} /> */}
         </div>
         <div style={title}>
           <h1>Specialty Beers</h1>
