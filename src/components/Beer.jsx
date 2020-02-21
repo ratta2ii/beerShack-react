@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import beer6 from '../assets/images/beer6.png';
 
 
 function Beer(props) {
@@ -13,8 +14,6 @@ function Beer(props) {
     border: '40px solid rgb(255, 193, 80)',
     webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
     boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
-    // webkitBoxShadow: '8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 15px 20px 7px -7px rgba(5,23,56,0)',
-    // boxShadow: '8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 15px 20px 7px -7px rgba(5,23,56,0)'
   };
 
   let leftColumn = {
@@ -62,13 +61,13 @@ function Beer(props) {
     <div>
       <div style={productsContainer}>
         <div style={leftColumn}>
-          <img style={beerImage} src={'https://source.unsplash.com/random/150×150/?beer'} />
+          <img style={beerImage} src={beer6} />
         </div>
         <div style={rightColumn}>
           <h3 style={beerName}>{props.names}</h3>
           <h4 style={beerBrand}>Brand: {props.brand}</h4>
           <h4 style={content}>Alcohol Content: <span style={contentNumber}>{props.alcoholContent}</span></h4>
-          <h4 style={content}>Remaining Pints: <span style={contentNumber}>{props.pintsRemaining}</span></h4>
+          {/* <h4 style={content}>Remaining Pints: <span style={contentNumber}>{props.pintsRemaining}</span></h4> */}
           <h4 style={content}>Price: <span style={beerPrice}>{props.price}</span></h4>
         </div>
       </div>
@@ -77,11 +76,11 @@ function Beer(props) {
 }
 
 Beer.propTypes = {
-  names: PropTypes.string.isRequired,
+  names: PropTypes.string,
   brand: PropTypes.string,
   alcoholContent: PropTypes.string,
-  pintsRemaining: PropTypes.number.isRequired,
-  price: PropTypes.string.isRequired
+  price: PropTypes.string
+  // pintsRemaining: PropTypes.number
 };
 
 
