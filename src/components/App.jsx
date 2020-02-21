@@ -4,6 +4,7 @@ import Home from './Home';
 import BeerList from './BeerList';
 import NewBeerControl from './NewBeerControl';
 import Error404 from './Error404';
+import redTheme from '../assets/images/red.jpg';
 
 
 class App extends React.Component {
@@ -38,6 +39,18 @@ class App extends React.Component {
 
           <Route component={Error404} />
         </Switch>
+
+        <style global jsx>{`
+          body {
+            background: url('${redTheme}');
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-size: cover;
+
+          }
+        `}</style>
       </div>
     );
 

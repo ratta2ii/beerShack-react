@@ -8,14 +8,37 @@ import Navbar from './Navbar';
 function BeerList(props) {
 
   let productContainer = {
-    width: '50%',
-    margin: '0 auto'
+    width: '100%',
+    margin: '0 auto',
+    backgroundColor: '#ab1311',
+    padding: '20px',
+    webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
+    boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
   };
+
+  var title = {
+    backgroundColor: 'black',
+    width: '50%',
+    margin: '0 auto 40px auto',
+    gridArea: '2 / 4 / 3 / 10',
+    textAlign: 'center',
+    border: '39px solid #141819',
+    color: 'white',
+    fontSize: '30px',
+    opacity: '0.7',
+    borderRadius: '10px'
+  };
+
+
 
   return (
     <div>
       <Navbar />
+      <div style={title}>
+        <h1>Specialty Beers</h1>
+      </div>
       <div style={productContainer}>
+
         {props.beerList.map((beer, index) =>
           <Beer
             names={beer.names}
@@ -25,6 +48,11 @@ function BeerList(props) {
             price={beer.price}
             key={index} />
         )}
+        <style jsx>{`
+          .example::-webkit-scrollbar {
+            display: none;
+          }
+        `}</style>
       </div>
     </div>
   );

@@ -1,22 +1,21 @@
-
 import React from 'react';
-import redTheme from '../assets/images/red.jpg';
+// import redTheme from '../assets/images/red.jpg';
 import { Link } from 'react-router-dom';
 
 
 
 function Home() {
   
-  var background = {
-    backgroundImage: `url(${redTheme})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 100%',
-    position: 'absolute',
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%'
-  };
+  // var background = {
+  //   backgroundImage: `url(${redTheme})`,
+  //   backgroundRepeat: 'no-repeat',
+  //   backgroundSize: '100% 100%',
+  //   position: 'absolute',
+  //   top: '0',
+  //   left: '0',
+  //   width: '100%',
+  //   height: '100%'
+  // };
 
   let headerStyles = {
     fontSize: '160px',
@@ -45,11 +44,11 @@ function Home() {
   };
 
   return (
-    <div style={background}>
+    <div>
 
       <div>
         <h1 style={headerStyles}><span style={firstLetterB}>B</span>eer<span style={firstLetterS}>S</span>hack</h1>
-        <p><Link to="/products"><li style={entryLink} >Enter Here</li></Link></p>
+        <p><Link to="/beerlist"><li style={entryLink} >Enter Here</li></Link></p>
 
       </div> 
     </div>

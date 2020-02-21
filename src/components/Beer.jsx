@@ -7,13 +7,14 @@ function Beer(props) {
 
   let productsContainer = {
     width: '90%',
-    margin: '25px auto',
+    margin: '35px auto',
     backgroundColor: 'white',
     display: 'grid',
-    gridTemplateColumns: '1fr 2fr',
-    border: '40px solid rgb(255, 193, 80)',
-    webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
-    boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
+    gridTemplateColumns: '300px minmax(300px, 500px)',
+    // gridTemplateColumns: '1fr 2fr',
+    border: '40px solid rgb(255, 193, 80)'
+    // webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
+    // boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
   };
 
   let leftColumn = {

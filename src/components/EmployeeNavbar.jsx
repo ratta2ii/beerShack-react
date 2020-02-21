@@ -37,7 +37,7 @@ function EmployeeNavbar() {
       <ul>
         <Link to="/"><li style={homeLink} >Home</li></Link>
         <Link to="/products"><li style={listElements} >Products</li></Link>
-        <Link to="/newbeer"><li style={listElements} >Add Beer</li></Link> 
+        <Link to="/newbeer"><li style={listElements} >Add Beer</li></Link>
         <Link to="/sign-out"><li style={listElements} >Sign Out</li></Link>
       </ul>
 
