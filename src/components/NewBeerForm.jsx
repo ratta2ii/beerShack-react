@@ -5,22 +5,22 @@ import Navbar from './Navbar';
 
 let formContainer = {
   backgroundColor: 'white',
-  width: '375px',
+  width: '300px',
   margin: '0 auto',
-  height: '525px',
+  height: '400px',
   borderRadius: '3px',
   padding: '20px 40px 40px 40px',
-  border: '60px solid #ffc150',
+  border: '50px solid #ffc150',
   webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
   boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
 };
 
 let inputField = {
-  border: '4px solid #dda832',
+  border: '2px solid #dda832',
   width: '94%',
-  height: '50px',
+  height: '30px',
   margin: '0 0 25px 0',
-  borderRadius: '8px',
+  borderRadius: '5px',
   fontSize: '20px',
   padding: '0 10px'
 };
@@ -29,13 +29,13 @@ let submitButton = {
   margin: '10px 0 20px 30%',
   fontSize: '23px',
   backgroundColor: 'rgb(203, 213, 217)',
-  borderRadius: '5px',
+  borderRadius: '3px',
   padding: '4px 14px',
   border: '2px solid gray'
 };
 
 let formLabel = {
-  fontSize: '25px',
+  fontSize: '20px',
   margin: '0 0 7px 0'
 };
 
