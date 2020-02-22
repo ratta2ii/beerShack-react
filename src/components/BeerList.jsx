@@ -40,14 +40,14 @@ function BeerList(props) {
       </div>
       <div style={productContainer}>
 
-        {props.beerList.map((beer, index) =>
+        {props.beerList.map((beer) =>
           <Beer
             names={beer.names}
             brand={beer.brand}
             alcoholContent={beer.alcoholContent}
-            // pintsRemaining={beer.pintsRemaining}
+            pintsRemaining={beer.pintsRemaining}
             price={beer.price}
-            key={index} />
+            key={beer.id} />
         )}
         <style jsx>{`
           .example::-webkit-scrollbar {

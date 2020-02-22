@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
+import { v4 } from 'uuid';
 
 
 let formContainer = {
@@ -49,7 +50,7 @@ function NewBeerForm(props) {
 
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();
-    props.onSubmitAddNewBeer({ names: _names.value, brand: _brand.value, alcoholContent: _alcoholContent.value, price: _price.value });
+    props.onSubmitAddNewBeer({ names: _names.value, brand: _brand.value, alcoholContent: _alcoholContent.value, price: _price.value, id: v4() });
     _names.value = '';
     _brand.value = '';
     _alcoholContent.value = '';

@@ -27,8 +27,8 @@ Beer.propTypes = {
   names: PropTypes.string,
   brand: PropTypes.string,
   alcoholContent: PropTypes.string,
-  price: PropTypes.string
-  // pintsRemaining: PropTypes.number
+  price: PropTypes.string,
+  pintsRemaining: PropTypes.number
 };
 
 

@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterBeerList: [{ names: 'Molson', brand: 'Molson', alcoholContent: '5.5%', pintsRemaining: 124, price: '$7.99' }]
+      masterBeerList: []
     };
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);
   }
@@ -24,7 +24,7 @@ class App extends React.Component {
   // }
 
   handleAddingNewBeerToList(newBeer) {
-    console.log('I am inside handleAddingNewBeerToList');
+    console.log('I am inside handleAddingNewBeerToList' + newBeer.name);
     var newMasterBeerList = this.state.masterBeerList.slice();
     newMasterBeerList.push(newBeer);
     console.log(newMasterBeerList);
