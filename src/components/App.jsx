@@ -4,7 +4,7 @@ import Home from './Home';
 import BeerList from './BeerList';
 import NewBeerControl from './NewBeerControl';
 import Error404 from './Error404';
-import redTheme from '../assets/images/red.jpg';
+// import redTheme from '../assets/images/red.jpg';
 
 
 class App extends React.Component {
@@ -12,13 +12,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterBeerList: [{ names: "Molson", brand: "Molson", alcoholContent: "5.5%", pintsRemaining: 124, price: "$7.99" }]
+      masterBeerList: [{ names: 'Molson', brand: 'Molson', alcoholContent: '5.5%', pintsRemaining: 124, price: '$7.99' }]
     };
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);
   }
 
   handleAddingNewBeerToList(newBeer) {
-    console.log("I am inside handleAddingNewBeerToList");
+    console.log('I am inside handleAddingNewBeerToList');
     var newMasterBeerList = this.state.masterBeerList.slice();
     newMasterBeerList.push(newBeer);
     console.log(newMasterBeerList);
@@ -40,7 +40,7 @@ class App extends React.Component {
           <Route component={Error404} />
         </Switch>
 
-        <style global jsx>{`
+        {/* <style global jsx>{`
           body {
             background: url('${redTheme}');
             background-repeat: no-repeat;
@@ -50,7 +50,7 @@ class App extends React.Component {
             background-size: cover;
 
           }
-        `}</style>
+        `}</style> */}
       </div>
     );
 

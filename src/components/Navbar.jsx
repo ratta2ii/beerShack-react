@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 function Navbar() {
 
   var navContainer = {
-    padding: '40px 15px',
-    marginBottom: '200px'
+    padding: '30px 0px',
+    marginBottom: '100px'
   };
 
   var listElements = {
     float: 'left',
-    fontSize: '35px',
-    border: '4px solid #ffc150',
+    fontSize: '20px',
+    border: '3px solid #ffc150',
     color: 'lightgray',
     padding: '10px',
     listStyleType: 'none',
@@ -21,8 +21,8 @@ function Navbar() {
 
   var homeLink = {
     float: 'left',
-    fontSize: '35px',
-    border: '4px solid #ffc150',
+    fontSize: '20px',
+    border: '3px solid #ffc150',
     color: 'lightgray',
     padding: '10px',
     listStyleType: 'none',

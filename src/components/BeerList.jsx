@@ -8,7 +8,7 @@ import Navbar from './Navbar';
 function BeerList(props) {
 
   let productContainer = {
-    width: '100%',
+    width: '50%',
     margin: '0 auto',
     backgroundColor: '#ab1311',
     padding: '20px',
@@ -20,13 +20,14 @@ function BeerList(props) {
     backgroundColor: 'black',
     width: '50%',
     margin: '0 auto 40px auto',
-    gridArea: '2 / 4 / 3 / 10',
+    // gridArea: '2 / 4 / 3 / 10',
     textAlign: 'center',
-    border: '39px solid #141819',
+    border: '30px solid #141819',
     color: 'white',
-    fontSize: '30px',
-    opacity: '0.7',
-    borderRadius: '10px'
+    fontSize: '20px',
+    opacity: '0.8',
+    borderRadius: '10px',
+    padding: '0px'
   };
 
 

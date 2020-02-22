@@ -1,6 +1,6 @@
 import React from 'react';
 import EmployeeAuthentication from './EmployeeAuthentication';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import NewBeerForm from './NewBeerForm';
 
 class NewBeerControl extends React.Component {
