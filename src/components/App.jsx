@@ -4,6 +4,7 @@ import Home from './Home';
 import BeerList from './BeerList';
 import NewBeerControl from './NewBeerControl';
 import Error404 from './Error404';
+import Admin from './Admin';
 // import redTheme from '../assets/images/red.jpg';
 
 
@@ -12,19 +13,28 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterBeerList: []
+      masterBeerList: [],
+      selectedBeer: null,
     };
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);
+    this.handleChangingSelectedBeer = this.handleChangingSelectedBeer.bind(this);
   }
 
-  // handleRemovingOneBeerFromKeg(beerObject) {
-  //   var beerCount = beerObject.pintsRemaining;
-  //   var newCount = beerCount - 1;
-
-  // }
+  handleChangingSelectedBeer(beer) {
+    var newMasterBeerList = this.state.masterBeerList;
+    newMasterBeerList.forEach(element => {
+      if (element.id === beer.myKey) {
+        var remaining = parseInt(element.pintsRemaining);
+        remaining--;
+        remaining += '';
+        element.pintsRemaining = remaining;
+        this.setState({ masterBeerList: newMasterBeerList });
+      }
+    });
+    return false;
+  }
 
   handleAddingNewBeerToList(newBeer) {
-    console.log('I am inside handleAddingNewBeerToList' + newBeer.name);
     var newMasterBeerList = this.state.masterBeerList.slice();
     newMasterBeerList.push(newBeer);
     console.log(newMasterBeerList);
@@ -43,20 +53,33 @@ class App extends React.Component {
           <Route path='/newbeer' render={() => <NewBeerControl
             onSubmitAddNewBeer={this.handleAddingNewBeerToList} />} />
 
+          <Route path='/admin' render={(props) => <Admin
+            beerList={this.state.masterBeerList}
+            currentRouterPath={props.location.pathname}
+            onBeerSelection={this.handleChangingSelectedBeer}
+            selectedBeer={this.state.selectedBeer} />} />
+
           <Route component={Error404} />
         </Switch>
 
-        {/* <style global jsx>{`
-          body {
-            background: url('${redTheme}');
-            background-repeat: no-repeat;
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            background-size: cover;
-
+        <style global jsx>{`
+          button:focus {
+            outline: 0;
           }
-        `}</style> */}
+      
+          a:link {
+            text-decoration: none;
+          }
+      
+          button:hover {
+            cursor: pointer;
+          }
+      
+          button:active {
+            outline: none;
+            border: none;
+          }
+        `}</style>
       </div>
     );
 
@@ -64,5 +87,14 @@ class App extends React.Component {
 }
 
 
-
 export default App;
+
+
+  //  body {
+  //           background: url('${redTheme}');
+  //           background-repeat: no-repeat;
+  //           position: fixed;
+  //           top: 0px;
+  //           left: 0px;
+  //           background-size: cover;
+  //         }

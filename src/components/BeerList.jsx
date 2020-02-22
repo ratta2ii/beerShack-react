@@ -20,7 +20,6 @@ function BeerList(props) {
     backgroundColor: 'black',
     width: '50%',
     margin: '0 auto 40px auto',
-    // gridArea: '2 / 4 / 3 / 10',
     textAlign: 'center',
     border: '30px solid #141819',
     color: 'white',
@@ -29,8 +28,6 @@ function BeerList(props) {
     borderRadius: '10px',
     padding: '0px'
   };
-
-
 
   return (
     <div>
@@ -47,21 +44,23 @@ function BeerList(props) {
             alcoholContent={beer.alcoholContent}
             pintsRemaining={beer.pintsRemaining}
             price={beer.price}
-            key={beer.id} />
+            key={beer.id}
+            myKey={beer.id}
+            currentRouterPath={props.currentRouterPath}
+            onBeerSelection={props.onBeerSelection}
+          />
         )}
-        <style jsx>{`
-          .example::-webkit-scrollbar {
-            display: none;
-          }
-        `}</style>
       </div>
     </div>
   );
 }
 
 BeerList.propTypes = {
-  beerList: PropTypes.array
+  beerList: PropTypes.array,
+  onBeerSelection: PropTypes.func,
+  currentRouterPath: PropTypes.string
 };
 
 
 export default BeerList;
+

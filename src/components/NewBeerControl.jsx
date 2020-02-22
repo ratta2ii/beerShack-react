@@ -21,10 +21,10 @@ class NewBeerControl extends React.Component {
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage) {
       currentlyVisibleContent = <NewBeerForm
-        onSubmitAddNewBeer={this.props.onSubmitAddNewBeer} />
+        onSubmitAddNewBeer={this.props.onSubmitAddNewBeer} />;
     } else {
       currentlyVisibleContent = <EmployeeAuthentication
-        onSubmitAuthentication={this.handleDisplayForm} />
+        onSubmitAuthentication={this.handleDisplayForm} />;
     }
 
     return (

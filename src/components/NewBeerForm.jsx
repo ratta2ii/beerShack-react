@@ -50,7 +50,7 @@ function NewBeerForm(props) {
 
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();
-    props.onSubmitAddNewBeer({ names: _names.value, brand: _brand.value, alcoholContent: _alcoholContent.value, price: _price.value, id: v4() });
+    props.onSubmitAddNewBeer({ names: _names.value, brand: _brand.value, alcoholContent: _alcoholContent.value, price: _price.value, pintsRemaining: '124', id: v4() });
     _names.value = '';
     _brand.value = '';
     _alcoholContent.value = '';
@@ -91,6 +91,7 @@ function NewBeerForm(props) {
             ref={(input) => { _price = input; }} />
 
           <div>
+
             <button style={submitButton} type='submit'>Add Beer</button>
           </div>
         </form>
