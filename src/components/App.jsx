@@ -17,6 +17,12 @@ class App extends React.Component {
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);
   }
 
+  // handleRemovingOneBeerFromKeg(beerObject) {
+  //   var beerCount = beerObject.pintsRemaining;
+  //   var newCount = beerCount - 1;
+
+  // }
+
   handleAddingNewBeerToList(newBeer) {
     console.log('I am inside handleAddingNewBeerToList');
     var newMasterBeerList = this.state.masterBeerList.slice();
