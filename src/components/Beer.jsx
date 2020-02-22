@@ -37,9 +37,25 @@ function Beer(props) {
       </div>
 
     );
+  } else {
+    return (
+      <div>
+        <div style={productsContainer}>
+          <div style={leftColumn}>
+            <img style={beerImage} src={beer3} />
+          </div>
+
+          <div style={centerColumn}>
+            <h3 style={beerName}>{props.names}</h3>
+            <h4 style={beerBrand}>Brand: {props.brand}</h4>
+            <h4 style={content}>Alcohol Content: <span style={contentNumber}>{props.alcoholContent}</span></h4>
+            <h4 style={content}>Remaining Pints: <span style={contentNumber}>{props.pintsRemaining}</span></h4>
+            <h4 style={beerPrice}>Price: <span style={beerDollars}>$ {props.price}</span></h4>
+          </div>
+        </div>
+      </div>
+    );
   }
-
-
 }
 
 Beer.propTypes = {

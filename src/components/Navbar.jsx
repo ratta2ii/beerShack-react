@@ -38,7 +38,7 @@ function Navbar() {
         <Link to="/beerlist"><li style={listElements} >Products</li></Link>
         <Link to="/newbeer"><li style={listElements} >Add Beer</li></Link>
         <Link to="/"><li style={listElements} >FAQ</li></Link>
-        <Link to="/"><li style={listElements} >Sign In</li></Link>
+        <Link to="/admin"><li style={listElements} >Admin</li></Link>
       </ul>
 
     </div>
