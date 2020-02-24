@@ -12,7 +12,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterBeerList: [],
+      masterBeerList: [ { names: 'Blue Moon', brand: 'Made by somebody', alcoholContent: '5%', price: '7.99', pintsRemaining: '124', id: '1'},
+                        { names: 'Bud Light', brand: 'Budweiser', alcoholContent: '3.25%', price: '4.99', pintsRemaining: '124', id: '2'} ],
       selectedBeer: null
     };
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);

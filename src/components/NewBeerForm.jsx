@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import Navbar from './Navbar';
 import { v4 } from 'uuid';
 import redTheme from '../assets/images/red.jpg';
-import redTheme from './src/assets/images/red.jpg';
 
 
-var background = {
+
+let background = {
   backgroundImage: `url(${redTheme})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: '100% 100%',
@@ -19,7 +19,7 @@ var background = {
 let formContainer = {
   backgroundColor: 'white',
   width: '300px',
-  margin: '0 auto',
+  margin: '150px auto',
   height: '400px',
   borderRadius: '3px',
   padding: '20px 40px 40px 40px',
@@ -63,6 +63,7 @@ function NewBeerForm(props) {
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();
     props.onSubmitAddNewBeer({ names: _names.value, brand: _brand.value, alcoholContent: _alcoholContent.value, price: _price.value, pintsRemaining: '124', id: v4() });
+
     _names.value = '';
     _brand.value = '';
     _alcoholContent.value = '';

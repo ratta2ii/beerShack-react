@@ -29,6 +29,7 @@ function Beer(props) {
                 alcoholContent: props.alcoholContent,
                 price: props.price,
                 myKey: props.myKey,
+                key: props.key,
                 pintsRemaining: props.pintsRemaining
               });
             }}>Order</button>
@@ -134,7 +135,7 @@ let beerDollars = {
 };
 
 let submitButton = {
-  margin: '27% 0 25% 15%',
+  margin: '15% 0 0 15%',
   fontSize: '35px',
   backgroundColor: 'rgb(106, 175, 202)',
   borderRadius: '50%',

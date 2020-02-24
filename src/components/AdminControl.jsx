@@ -43,7 +43,7 @@ class AdminControl extends React.Component {
   }
 }
 
-AdminControl.proptypes = {
+AdminControl.propTypes = {
   beerList: PropTypes.array,
   currentRouterPath: PropTypes.string,
   onBeerSelection: PropTypes.func
