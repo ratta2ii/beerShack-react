@@ -5,7 +5,6 @@ import BeerList from './BeerList';
 import NewBeerForm from './NewBeerForm';
 import Error404 from './Error404';
 import AdminControl from './AdminControl';
-// import redTheme from '../assets/images/red.jpg';
 
 
 class App extends React.Component {
@@ -21,8 +20,6 @@ class App extends React.Component {
   }
 
   handleChangingSelectedBeer(beer) {
-    var orderButton = document.getElementsByTagName('button');
-    console.log("I am the button " + orderButton)
     var newMasterBeerList = this.state.masterBeerList;
     newMasterBeerList.forEach(element => {
       if (element.id === beer.myKey) {
@@ -87,15 +84,4 @@ class App extends React.Component {
   }
 }
 
-
 export default App;
-
-
-  //  body {
-  //           background: url('${redTheme}');
-  //           background-repeat: no-repeat;
-  //           position: fixed;
-  //           top: 0px;
-  //           left: 0px;
-  //           background-size: cover;
-  //         }

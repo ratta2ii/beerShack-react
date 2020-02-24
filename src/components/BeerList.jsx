@@ -6,45 +6,11 @@ import redTheme from '../assets/images/red.jpg';
 import Footer from './Footer';
 
 
-
 function BeerList(props) {
-
-  var background = {
-    backgroundImage: `url(${redTheme})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 100%',
-    width: '100%',
-    height: '100%',
-    position: 'absolute',
-    overflow: 'scroll',
-    overflowX: 'hidden'
-  };
-
-  let productContainer = {
-    width: '50%',
-    margin: '0 auto',
-    backgroundColor: '#ab1311',
-    padding: '20px',
-    webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
-    boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
-  };
-
-  var title = {
-    backgroundColor: 'black',
-    width: '50%',
-    margin: '0 auto 40px auto',
-    textAlign: 'center',
-    border: '30px solid #141819',
-    color: '#ffc150',
-    fontSize: '20px',
-    opacity: '0.8',
-    borderRadius: '10px',
-    padding: '0px'
-  };
 
   return (
     <div style={background}>
-      <Navbar 
+      <Navbar
         currentRouterPath={props.currentRouterPath} />
       <div style={title}>
         <h1>Specialty Beers</h1>
@@ -79,3 +45,36 @@ BeerList.propTypes = {
 
 export default BeerList;
 
+
+var background = {
+  backgroundImage: `url(${redTheme})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: '100% 100%',
+  width: '100%',
+  height: '100%',
+  position: 'absolute',
+  overflow: 'scroll',
+  overflowX: 'hidden'
+};
+
+let productContainer = {
+  width: '50%',
+  margin: '0 auto',
+  backgroundColor: '#ab1311',
+  padding: '20px',
+  webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
+  boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
+};
+
+var title = {
+  backgroundColor: 'black',
+  width: '50%',
+  margin: '0 auto 40px auto',
+  textAlign: 'center',
+  border: '30px solid #141819',
+  color: '#ffc150',
+  fontSize: '20px',
+  opacity: '0.8',
+  borderRadius: '10px',
+  padding: '0px'
+};

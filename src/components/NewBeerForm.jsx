@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Navbar from './Navbar';
 import { v4 } from 'uuid';
 import redTheme from '../assets/images/red.jpg';
+import redTheme from './src/assets/images/red.jpg';
 
 
 var background = {

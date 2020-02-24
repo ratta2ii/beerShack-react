@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BeerList from './BeerList';
-import EmployeeNavbar from './EmployeeNavbar';
+
 
 function Admin(props) {
 
@@ -13,8 +13,6 @@ function Admin(props) {
     color: '#ffc150',
     size: '25px'
   };
-
-
 
   return (
     <div>

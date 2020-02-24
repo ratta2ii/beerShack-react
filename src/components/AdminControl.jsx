@@ -8,8 +8,6 @@ var alreadyAuthorized = false;
 
 class AdminControl extends React.Component {
 
-
-
   constructor(props) {
     super(props);
     this.state = {
@@ -21,8 +19,6 @@ class AdminControl extends React.Component {
   handleDisplayForm() {
     this.setState({ formVisibleOnPage: true });
   }
-
-
 
   render() {
 

@@ -4,13 +4,6 @@ import PropTypes from 'prop-types';
 
 function EmployeeAuthentication(props) {
 
-  let text = {
-    color: 'red',
-    textAlign: 'center',
-    fontSize: '50px',
-    marginTop: '200px'
-  };
-
   return (
     <div style={text}>
       <h2>Employee Sign In here</h2>
@@ -25,3 +18,11 @@ EmployeeAuthentication.propTypes = {
 };
 
 export default EmployeeAuthentication;
+
+
+let text = {
+  color: 'red',
+  textAlign: 'center',
+  fontSize: '50px',
+  marginTop: '200px'
+};

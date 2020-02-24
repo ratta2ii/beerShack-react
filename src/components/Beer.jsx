@@ -22,7 +22,7 @@ function Beer(props) {
           </div>
 
           <div style={rightColumn}>
-            <button style={submitButton} type='button' onClick={() => {       
+            <button style={submitButton} type='button' onClick={() => {
               props.onBeerSelection({
                 names: props.names,
                 brand: props.brand,
@@ -71,10 +71,6 @@ Beer.propTypes = {
 
 
 export default Beer;
-
-
-
-
 
 
 let productsContainer = {
