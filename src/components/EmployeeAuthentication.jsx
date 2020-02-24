@@ -13,9 +13,9 @@ function EmployeeAuthentication(props) {
 
   return (
     <div style={text}>
-      <h2>Are you an employee?</h2>
+      <h2>Employee Sign In here</h2>
       <button onClick={props.onSubmitAuthentication}>Yes</button>
-      <h6>Note: I would never do this in the real world.</h6>
+      <h6>Note: This may change at some point, but for now it makes sense.</h6>
     </div>
   );
 }

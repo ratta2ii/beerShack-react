@@ -22,7 +22,7 @@ function Beer(props) {
           </div>
 
           <div style={rightColumn}>
-            <button style={submitButton} type='button' onClick={() => {
+            <button style={submitButton} type='button' onClick={() => {       
               props.onBeerSelection({
                 names: props.names,
                 brand: props.brand,
@@ -82,12 +82,9 @@ let productsContainer = {
   margin: '0 auto 35px auto',
   backgroundColor: 'white',
   display: 'grid',
-  // gridTemplateColumns: '150px 2fr',
-  gridTemplateColumns: '25% 1fr 1fr',
+  gridAutoColumns: '25% 1fr 1fr',
   border: '40px solid rgb(255, 193, 80)',
   borderRadius: '5px 60px 5px'
-  // webkitBoxhadow: '5px 5px 15px 9px rgb(15, 12, 12)',
-  // boxShadow: '5px 5px 15px 9px rgb(15, 12, 12)'
 };
 
 let leftColumn = {
@@ -151,80 +148,10 @@ let submitButton = {
   color: '#802020',
   height: '125px',
   width: '125px',
+  boxShadow: '2px 2px 8px 2px #000000'
 };
 
 
-
-
-
-
-
-// function Beer(props) {
-
-//   const beerInformation =
-//     <div>
-//       <div style={productsContainer}>
-//         <div style={leftColumn}>
-//           <img style={beerImage} src={beer3} />
-//         </div>
-//         <div style={centerColumn}>
-//           <h3 style={beerName}>{props.names}</h3>
-//           <h4 style={beerBrand}>Brand: {props.brand}</h4>
-//           <h4 style={content}>Alcohol Content: <span style={contentNumber}>{props.alcoholContent}</span></h4>
-//           <h4 style={content}>Remaining Pints: <span style={contentNumber}>{props.pintsRemaining}</span></h4>
-//           <h4 style={beerPrice}>Price: <span style={beerDollars}>{props.price}</span></h4>
-//         </div>
-//       </div>
-//     </div>;
-//   if (props.currentRouterPath === '/admin') {
-//     return (
-//       <div onClick={() => {
-//         props.onBeerSelection({
-//           names: props.names,
-//           brand: props.brand,
-//           alcoholContent: props.alcoholContent,
-//           price: props.price,
-//           pintsRemaining: props.pintsRemaining
-//         });
-//       }}>
-//         {beerInformation}
-//       </div>
-//     );
-//   } else {
-//     return (
-//       {beerInformation}
-//     );
-//   }
-// }
-
-// Beer.propTypes = {
-//   names: PropTypes.string,
-//   brand: PropTypes.string,
-//   alcoholContent: PropTypes.string,
-//   price: PropTypes.string,
-//   pintsRemaining: PropTypes.string,
-//   currentRouterPath: PropTypes.string,
-//   onBeerSelection: PropTypes.func
-// };
-
-
-// export default Beer;
-
-
-
-
-
-
-
-// <div onClick={() => {
-//   props.onBeerSelection({
-//     names: props.names,
-//     brand: props.brand,
-//     alcoholContent: props.alcoholContent,
-//     price: props.price,
-//     pintsRemaining: props.pintsRemaining
-//   });
-// }}>
 
 
 

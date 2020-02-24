@@ -1,17 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BeerList from './BeerList';
+import EmployeeNavbar from './EmployeeNavbar';
 
 function Admin(props) {
 
   let admin = {
     position: 'fixed',
     top: '10px',
-    right: '40px',
+    right: '50px',
     zIndex: '5',
-    color: 'blue',
+    color: '#ffc150',
     size: '25px'
   };
+
+
 
   return (
     <div>

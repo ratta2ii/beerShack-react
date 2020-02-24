@@ -2,9 +2,9 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import BeerList from './BeerList';
-import NewBeerControl from './NewBeerControl';
+import NewBeerForm from './NewBeerForm';
 import Error404 from './Error404';
-import Admin from './Admin';
+import AdminControl from './AdminControl';
 // import redTheme from '../assets/images/red.jpg';
 
 
@@ -14,13 +14,15 @@ class App extends React.Component {
     super(props);
     this.state = {
       masterBeerList: [],
-      selectedBeer: null,
+      selectedBeer: null
     };
     this.handleAddingNewBeerToList = this.handleAddingNewBeerToList.bind(this);
     this.handleChangingSelectedBeer = this.handleChangingSelectedBeer.bind(this);
   }
 
   handleChangingSelectedBeer(beer) {
+    var orderButton = document.getElementsByTagName('button');
+    console.log("I am the button " + orderButton)
     var newMasterBeerList = this.state.masterBeerList;
     newMasterBeerList.forEach(element => {
       if (element.id === beer.myKey) {
@@ -37,7 +39,6 @@ class App extends React.Component {
   handleAddingNewBeerToList(newBeer) {
     var newMasterBeerList = this.state.masterBeerList.slice();
     newMasterBeerList.push(newBeer);
-    console.log(newMasterBeerList);
     this.setState({ masterBeerList: newMasterBeerList });
   }
 
@@ -50,10 +51,10 @@ class App extends React.Component {
           <Route path='/beerlist' render={() => <BeerList
             beerList={this.state.masterBeerList} />} />
 
-          <Route path='/newbeer' render={() => <NewBeerControl
+          <Route path='/newbeer' render={() => <NewBeerForm
             onSubmitAddNewBeer={this.handleAddingNewBeerToList} />} />
 
-          <Route path='/admin' render={(props) => <Admin
+          <Route path='/admin' render={(props) => <AdminControl
             beerList={this.state.masterBeerList}
             currentRouterPath={props.location.pathname}
             onBeerSelection={this.handleChangingSelectedBeer}

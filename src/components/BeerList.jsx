@@ -2,10 +2,23 @@ import React from 'react';
 import Beer from './Beer';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
+import redTheme from '../assets/images/red.jpg';
+import Footer from './Footer';
 
 
 
 function BeerList(props) {
+
+  var background = {
+    backgroundImage: `url(${redTheme})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 100%',
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    overflow: 'scroll',
+    overflowX: 'hidden'
+  };
 
   let productContainer = {
     width: '50%',
@@ -22,7 +35,7 @@ function BeerList(props) {
     margin: '0 auto 40px auto',
     textAlign: 'center',
     border: '30px solid #141819',
-    color: 'white',
+    color: '#ffc150',
     fontSize: '20px',
     opacity: '0.8',
     borderRadius: '10px',
@@ -30,8 +43,9 @@ function BeerList(props) {
   };
 
   return (
-    <div>
-      <Navbar />
+    <div style={background}>
+      <Navbar 
+        currentRouterPath={props.currentRouterPath} />
       <div style={title}>
         <h1>Specialty Beers</h1>
       </div>
@@ -51,6 +65,7 @@ function BeerList(props) {
           />
         )}
       </div>
+      <Footer />
     </div>
   );
 }

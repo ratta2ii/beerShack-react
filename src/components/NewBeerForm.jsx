@@ -2,6 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
 import { v4 } from 'uuid';
+import redTheme from '../assets/images/red.jpg';
+
+
+var background = {
+  backgroundImage: `url(${redTheme})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: '100% 100%',
+  width: '100%',
+  height: '100%',
+  position: 'absolute'
+};
 
 
 let formContainer = {
@@ -58,7 +69,7 @@ function NewBeerForm(props) {
   }
 
   return (
-    <div>
+    <div style={background}>
       <Navbar />
       <div style={formContainer}>
         <form onSubmit={handleNewBeerFormSubmission}>
