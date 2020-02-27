@@ -11,7 +11,7 @@ function Footer() {
     opacity: '0.9',
     fontSize: '15px',
     color: '#ffc150',
-    marginTop: '250px',
+    marginTop: '250px'
   };
 
   return (
