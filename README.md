@@ -5,7 +5,7 @@
 
 ### **Description**
 
-_This is a client-side application built in React. The focus of this project was to practice drilling down props to lower level components, as well as to show a fundamental understanding of lifting state. The application uses a brewery site that allows a user from the outside to view a list of all products. The app also includes an Authorization component, adding admin capabilities that will present an admin with additional functionality. From here, the admin can add new kegs of beer to the product list, as well as order beers. There is also functionality to notify an Admin once the 124 pints have been ordered from a specific keg (Time to refill)._
+_This is a client-side application built in React. The focus of this project was to practice drilling down props to lower level components, as well as to show a fundamental understanding of lifting state. The application uses a brewery site that allows a user from the outside to view a list of all products. The app also includes an Authorization component, adding admin capabilities that will present an admin with additional functionality. From here, the admin has CRUD functionality and can add and delete new kegs of beer from product list, as well as place orders for beer. There is also functionality to notify an Admin once the 124 pints have been ordered from a specific keg (Time to refill)._
 
 _Please note that this project is early on into my React journey, so there are definitely some improvements that can be made. Most notably, using Redux to hold global state rather than drilling props down through multiple components._ 
 #
