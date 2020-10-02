@@ -19,14 +19,7 @@ _Please note that this project is early on into my React journey, so there are d
 5. $ npm run start
 #
    
-### **Component Tree (Planning Phase)**
-
-<center>
-
-![Image of Paths](src/assets/images/beerTree.png)
 ### **Technologies Used**
-
-</center>
 
 * React
 * JavaScript
